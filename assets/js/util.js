@@ -1,9 +1,5 @@
 (function($) {
 
-	/**
-	 * Generate an indented list of links from a nav. Meant for use with panel().
-	 * @return {jQuery} jQuery object.
-	 */
 	$.fn.navList = function() {
 
 		var	$this = $(this);
@@ -34,18 +30,13 @@
 
 	};
 
-	/**
-	 * Panel-ify an element.
-	 * @param {object} userConfig User config.
-	 * @return {jQuery} jQuery object.
-	 */
 	$.fn.panel = function(userConfig) {
 
-		// No elements?
+	
 			if (this.length == 0)
 				return $this;
 
-		// Multiple elements?
+
 			if (this.length > 1) {
 
 				for (var i=0; i < this.length; i++)
@@ -62,7 +53,6 @@
 				id = $this.attr('id'),
 				config;
 
-		// Config.
 			config = $.extend({
 
 				// Delay.
@@ -94,13 +84,13 @@
 
 			}, userConfig);
 
-			// Expand "target" if it's not a jQuery object already.
+		
 				if (typeof config.target != 'jQuery')
 					config.target = $(config.target);
 
-		// Panel.
 
-			// Methods.
+
+		
 				$this._hide = function(event) {
 
 					// Already hidden? Bail.
@@ -115,7 +105,6 @@
 
 						}
 
-					// Hide.
 						config.target.removeClass(config.visibleClass);
 
 					// Post-hide stuff.
