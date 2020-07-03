@@ -1,0 +1,36 @@
+body {
+    background-image: url(images/icp.png);
+    background-size: cover;
+}
+
+h1{
+    margin: 0% 40% 3% 30%;
+    text-align: center;
+}
+
+p{
+    margin:  0% 30% 0% 30%;
+}
+
+tr{
+    background: rgb(135, 166, 216);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+tr:hover{
+    background-color: mintcream;
+} 
+
+table{
+    padding: 1% 30% 0% 30%;
+    border-radius: 5px;
+}
+
+th {
+    background-color: lightseagreen;
+}
+.boton{
+     margin: 0% 10% 0% 40% ;
+     font-size: 15px;
+}
